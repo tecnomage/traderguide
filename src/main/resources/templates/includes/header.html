@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<head>
+
+<link th:href="@{/css/headerMenus.css}" rel="stylesheet" />
+<link th:href="@{/css/icons.css}" rel="stylesheet" />
+
+<script src="/js/menu.js" th:src="@{js/menu.js}"></script>
+<script src="/js/jumbo.js" th:src="@{js/jumbo.js}"></script>
+
+
+</head>
+
+<body>
+
+	<div th:fragment="menu">
+
+		<div class="navbar navbar-inverse navbar-twitch" role="navigation">
+			<div class="container">
+				<div class="navbar-header"></div>
+				<div class="">
+					<ul class="nav navbar-nav">
+
+						<li class="active"><a href="#"> <span class="small-nav"
+								data-toggle="tooltip" data-placement="right" title="Home">
+									<span class="glyphicon glyphicon-home"></span>
+							</span> <span class="full-nav"> Home </span>
+						</a></li>
+
+						<li><a href="#"> <span class="small-nav"
+								data-toggle="tooltip" data-placement="right" title="About Us">
+									<span class="glyphicon glyphicon-blackboard"></span>
+							</span> <span class="full-nav"> Sobre nós </span>
+						</a></li>
+						<li><a href="#"> <span class="small-nav"
+								data-toggle="tooltip" data-placement="right" title="Traders">
+									<span class="fa fa-users"></span>
+							</span> <span class="full-nav"> Traders </span>
+						</a></li>
+						<li><a href="#"> <span class="small-nav"
+								data-toggle="tooltip" data-placement="right"
+								title="Minha Carteira"> <span
+									class="glyphicon glyphicon-usd"></span>
+							</span> <span class="full-nav"> Minha Carteira </span>
+						</a></li>
+						<li><a href="#"> <span class="small-nav"
+								data-toggle="tooltip" data-placement="right" title=""> <span
+									class="glyphicon glyphicon-text-width"></span>
+							</span> <span class="full-nav"> Meus Pedidos </span>
+						</a></li>
+						<li><a href="/contato"> <span class="small-nav"
+								data-toggle="tooltip" data-placement="right" title="Contact Us">
+									<span class="glyphicon glyphicon-comment"></span>
+							</span> <span class="full-nav"> Contate-nos </span>
+						</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+
+
+		<div class="container">
+			<section class="bg-1 img-responsive img-rounded">
+				<div>
+					<h1>TraderHist</h1>
+					<p class="lead">Suas carteira protegida</p>
+				</div>
+			</section>
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+
+	<div th:fragment="footer">
+
+		<p class="rodape">
+			<img class="img-responsive" src="/img/logo.jpg"
+				th:src="@{/img/logo.jpg}" alt="error" />
+		</p>
+
+	</div>
+
+</body>
+
+</html>

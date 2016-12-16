@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}"
+    rel="stylesheet" />
+<script src="/js/menu.js" th:src="@{/js/menu.js}"></script>
+<script src="/js/jumbo.js" th:src="@{/js/jumbo.js}"></script>
+    
+<link href="/css/headerMenu.css" th:href="@{/css/headerMenu.css}"
+    rel="stylesheet" />
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+            th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js}"></script>
+
+</head>
+
+
+<div th:replace="includes/header :: menu"></div>
+    
+<body>
+
+    <section class="container">
+
+        
+        <p>
+            <img class="img-responsive img-rounded" src="/img/candle.jpg"
+                th:src="@{/img/candle.jpg}" alt="img error" />
+        </p>
+
+        <div class="panel-group" id="paineis-sobre">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse"
+                    data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Desde 2015</h3>
+                </div>
+
+                <div class="collapse in" id="primeiro-paragrafo">
+                    <div class="panel-body">Desde 2015 tornando a sua carteira mais rentável e controlada</div>
+                </div>
+            </div>
+
+            <div class="panel panel-default" onload="jumbo.js">
+                <div class="panel-heading" data-toggle="collapse"
+                    data-target="#segundo-paragrafo" data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Equipe profissional</h3>
+                </div>
+
+                <div id="segundo-paragrafo" class="collapse">
+                    <div class="panel-body">uma equipe que manja de tudo...manja systems</div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse"
+                    data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Tornando sua indecisão em investimentos, a nossa certeza</h3>
+                </div>
+
+                <div id="terceiro-paragrafo" class="collapse">
+                    <div class="panel-body">em trazer o maior lucro possível, ajudamos os mais diversos clientes a otimizar lucros.</div>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+
+    
+    <script src="/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+
+    <div th:replace="includes/header :: footer"></div>
+</body>
+</html>
